@@ -1,4 +1,4 @@
-# Teste [Emprego] Angular com Bootstrap para o Meu RH 360
+# Teste [Vaga para Dev] Angular com Bootstrap para o Meu RH 360
 
 Este projeto é um exemplo de aplicação Angular 10+ com Bootstrap, desenvolvida como parte do teste para o Meu RH 360.
 
