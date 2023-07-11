@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#sidebarCollapse span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar-header {
+    padding: 20px;
+}
+
+.sidebar-header h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.configure-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secao-crud {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

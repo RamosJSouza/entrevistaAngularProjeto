@@ -1,0 +1,61 @@
+<div class="container">
+
+    <h2>Formulário</h2>
+    <form [formGroup]="formulario" (ngSubmit)="salvarFormulario()">
+        <div class="form-group">
+            <label for="tipoEmpresa">Tipo de Empresa</label>
+            <input type="text" id="tipoEmpresa" class="form-control" formControlName="tipoEmpresa">
+        </div>
+        <div class="form-group">
+            <label for="nomeEmpresa">Nome da Empresa</label>
+            <input type="text" id="nomeEmpresa" class="form-control" formControlName="nomeEmpresa">
+        </div>
+        <div class="form-group">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" class="form-control" formControlName="cnpj" data-inputmask="'mask': '99.999.999/9999-99'">
+        </div>
+        <div class="form-group">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" class="form-control" formControlName="cep" (blur)="buscarCEP()">
+            <div class="alert alert-danger" *ngIf="error">{{ error }}</div>
+        </div>
+        <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" class="form-control" formControlName="endereco">
+        </div>
+        <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" class="form-control" formControlName="bairro">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" class="form-control" formControlName="estado">
+        </div>
+        <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" class="form-control" formControlName="cidade">
+        </div>
+        <div class="form-group">
+            <label for="complemento">Complemento</label>
+            <input type="text" id="complemento" class="form-control" formControlName="complemento">
+        </div>
+        <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text" id="celular" class="form-control" formControlName="celular" data-inputmask="'mask': '(99) 99999-9999'">
+        </div>
+        <div class="form-group">
+            <label for="nomeAdministrador">Nome do Administrador</label>
+            <input type="text" id="nomeAdministrador" class="form-control" formControlName="nomeAdministrador">
+        </div>
+        <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" class="form-control" formControlName="cpf" data-inputmask="'mask': '999.999.999-99'">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" class="form-control" formControlName="email">
+        </div>
+        <button type="submit" class="btn btn-secondary" (click)="cancelarConfiguracao()">Cancelar </button>
+        <button type="submit" class="btn btn-primary" [disabled]="!formulario.valid">Salvar</button>
+    </form>
+</div>

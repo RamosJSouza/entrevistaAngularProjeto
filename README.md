@@ -1,27 +1,39 @@
-# ProjetoAngularRegras
+# Teste Angular com Bootstrap para o Meu RH 360
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+Este projeto é um exemplo de aplicação Angular 10+ com Bootstrap, desenvolvida como parte do teste para o Meu RH 360.
 
-## Development server
+## Contato
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Se tiver alguma dúvida ou feedback sobre o projeto, sinta-se à vontade para entrar em contato através do e-mail ramosinfo@gmail.com, fale com o Ramos de Souza Janones ou visitando meu perfil do GitHub em [meu-profile](https://github.com/RamosJSouza).
 
-## Code scaffolding
+## Recursos Utilizados
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 10+
+- Bootstrap
+- Reactive Forms
+- Validadores personalizados
+- LocalStorage
 
-## Build
+## Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Tela de Cadastro com validação de campos, comparação de senhas e armazenamento em LocalStorage.
+- Tela de Dashboard com menu lateral responsivo.
+- Tela de Formulário de Configuração com preenchimento automático de endereço através de consulta à API de CEP.
+- Máscara para o campo de celular no formulário de cadastro.
+- Estilização elegante utilizando Bootstrap e CSS personalizado.
 
-## Running unit tests
+## Instruções de Instalação e Uso
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone este repositório em sua máquina local.
+2. Instale as dependências do projeto usando o comando `npm install`.
+3. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+4. Acesse a aplicação no navegador através da URL `http://localhost:4200`.
 
-## Running end-to-end tests
+## Contribuição
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Contribuições são bem-vindas! Se você deseja contribuir com este projeto, sinta-se à vontade para abrir uma solicitação de pull (pull request) com as suas alterações.
 
-## Further help
+## Licença
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este projeto está licenciado sob a licença MIT. 
+

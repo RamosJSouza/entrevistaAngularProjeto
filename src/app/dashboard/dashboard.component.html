@@ -1,0 +1,78 @@
+<div class="wrapper">
+    <!-- Barra lateral -->
+    <nav id="sidebar" class="bg-dark">
+        <div class="sidebar-header">
+            <h3>Meu Dashboard</h3>
+        </div>
+        <ul *ngIf="configuracaoCompleta === true" class="list-unstyled components">
+            <li>
+                <a href="/dashboard">Página 1</a>
+            </li>
+            <li>
+                <a href="/dashboard">Página 2</a>
+            </li>
+            <li>
+                <a href="/dashboard">Página 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="navbar-btn" (click)="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+            </div>
+        </nav>
+
+
+
+        <div class="container">
+            <div *ngIf="cadastroCompleto === false && !configuracaoCompleta">
+                <div class="configure-area">
+                    <h3 style="font-weight: bold;">Olá {{ nomeCompleto }}. Seja bem-vindo.</h3>
+                    <p>É necessário configurar a empresa matriz para visualizar todas as informações do sistema</p>
+                    <button class="btn btn-primary btn-lg" (click)="iniciarConfiguracao()">INICIAR CONFIGURAÇÃO</button>
+                </div>
+            </div>
+
+
+            <div *ngIf="configuracaoCompleta === true">
+
+                <div class="secao-crud">
+                    <button type="button" class="btn btn-light" (click)="editar()">Editar Empresa</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Dados da Empresa</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p><strong>Nome da Empresa:</strong> {{ nomeEmpresa }}</p>
+                                <p><strong>CPF do Administrador:</strong> {{ cpf }}</p>
+                                <p><strong>CEP:</strong> {{ cep }}</p>
+
+                            </div>
+                            <div class="col-md-3">
+                                <p><strong>CNPJ da Empresa:</strong> {{ cnpj }}</p>
+                                <p><strong>E-Mail do Administrador:</strong> {{ cnpj }}</p>
+                                <p><strong>Endereço:</strong> {{ endereco }}, {{ complemento }}, {{ bairro }}, {{ cidade }} - {{ estado }}</p>
+                            </div>
+
+                            <div class="col-md-3">
+                                <p><strong>Nome do Administrador:</strong> {{ nomeAdministrador }}</p>
+                                <p><strong>Telefone:</strong> {{ celular }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
